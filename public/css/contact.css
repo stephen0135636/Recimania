@@ -1,0 +1,198 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    background-color: #9e9e9e;
+    font-family: 'Segoe UI';
+    font-size: 20px
+}
+
+.section_1_page1{
+    margin: 50px 0 50px 0;
+}
+  
+.section_1_page1span{
+    color: #ce3232;
+}
+  
+.logo{
+    float: left;
+    width: 50%;
+}
+  
+nav{
+    float: right;
+    width: 50%;
+}
+  
+.logo h1 a{
+    text-decoration: none;
+    color: #000;
+}
+  
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav ul  li a{
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Segoe UI';
+} 
+  
+  nav ul li{
+    float: left;
+  }
+  
+  li a:hover { color: #ce3232;text-decoration: none;} 
+  .logo h1 a:hover{ color: #ce3232;text-decoration: none;}
+  
+
+    /*CONTACT US SECTION*/
+    .second_page h3{
+    color: #bfbdbd;
+    margin: 30px 0 30px 0;
+  }
+  
+  .second_page .name, .email, .subject, textarea{
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+  }
+  
+  .second_page button{
+    padding:15px 30px;
+    margin-top: 30px;
+    border: none; 
+    background-image: linear-gradient(to bottom right, #ec9f05af ,#ff4d00a9  );
+    align-items: center;
+    text-decoration: none;
+    color:#f9f9f9;
+    font-size: 15px;
+  }
+  .second_page button:hover{
+    background-color: #ce3232;
+    color: #f9f9f9;
+    border: thin;
+  }
+  
+  .second_page button:active{
+    transform: translateY(2px);
+}
+
+/*LINKS SECTION*/
+.mylink{
+    padding: 0;
+  }
+  
+  .facebook a{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .instagram a{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 200px;
+    right: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+.twitter a{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+  
+.facebook a:hover, .instagram a:hover, .twitter a:hover{
+    color: #ce3232;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .logo{
+        float: left;
+        font-size: 10px;
+        width: 30%;
+        margin:10px 0 0 10px ;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    nav{
+        float: right;
+        width: 50%;
+        margin: 20px 0 0 50px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    .second_page form input,    .second_page form textarea{
+        margin: 10px 0 20px 0;
+        border: 1px solid black;
+    }
+    .myLinks .facebook a{
+        transform: rotate(360deg);
+        position: absolute;
+        top: 0;
+        right: 70%;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .myLinks .instagram a{
+        transform: rotate(360deg);
+        position: absolute;
+        top: 0;
+        right: 40%;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .myLinks .twitter a{
+        transform: rotate(360deg);
+        position: absolute;
+        top: 0;
+        right: 20%;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .facebook a:hover, .instagram a:hover, .twitter a:hover{
+        color: #ce3232;
+        text-decoration: none;
+    }
+    
+}

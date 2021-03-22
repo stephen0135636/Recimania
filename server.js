@@ -6,9 +6,21 @@ const recipe = require('./utils/food')
 
 const port = process.env.PORT || 3000
 
+
+app.use(express.urlencoded({
+    extended: false
+}))
+app.use(express.json());
+
 app.use(express.static(publicDirectoryPath))
 
 app.set('view engine', 'hbs')
+
+
+app.post('/email', (req, res) =>{
+    console.log('Data', req.body)
+    res.json({ message: 'Message recieved'})
+})
 
 app.get('', (req, res) => {
     res.render('index')

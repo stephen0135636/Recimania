@@ -5,9 +5,9 @@
 
 body{
   background-color: #9e9e9e;
-  font-family: 'Segoe UI'
+  font-family: 'Segoe UI';
+  font-size: 20px
 }
-
 
 /*SECTION_1 PAGE 1*/
 
@@ -60,7 +60,7 @@ nav ul li{
 li a:hover { color: #ce3232;text-decoration: none;} 
 .logo h1 a:hover{ color: #ce3232;text-decoration: none;}
 
-/*SECTION_2 PAGE 1*/
+/*SECTION_2*/
 
 .section_2_page1 .story{
   padding: 10px;
@@ -82,14 +82,6 @@ li a:hover { color: #ce3232;text-decoration: none;}
   font-family: 'Segoe UI'
 }
 
-
-/* .info button{
-  margin: 30px 0 0 0;
-  padding: 5px 20px; 
-  background-color:  #f9f9f9;
-  border: 1px solid black;
-} */
-
 .info button{
   padding: 15px 60px;
   margin-top: 30px;
@@ -108,36 +100,39 @@ li a:hover { color: #ce3232;text-decoration: none;}
   background-color: #ce3232;
 }
 
-/*second grid*/
+/*SECOND GRID*/
 .img_slider{
   float: left;
 }
 
 
-/*third grid*/
+/*THIRD GRID*/
 .mylink{
   padding: 0;
 }
 
 .facebook a{
-  transform: rotate(90deg);
+  /* transform: rotate(90deg);
   position: absolute;
   top: 100px;
-  right: 0;
+  right: 0; */
   font-family: 'Segoe UI';
   font-size: 14px;
   text-decoration: none;
   color: #000;
+  float: right;
 }
 
 .instagram a{
-  transform: rotate(90deg);
+  /* transform: rotate(90deg);
   position: absolute;
   top: 200px;
-  right: 0;
+  right: 0; */
   font-size: 14px;
   text-decoration: none;
   color: #000;
+  display: inline;
+  float: right;
 }
 
 .twitter a{
@@ -170,43 +165,10 @@ li a:hover { color: #ce3232;text-decoration: none;}
   margin: 0;
 }
 
-.FAQ .question_1{
-  
-}
-
 .FAQ .question_2{
   margin: 3% 0 0 0;
 }
 
-/*PAGE 2*/
-
-.second_page h3{
-  color: #000;
-  margin: 10px 0 10px 0;
-}
-
-.second_page .name, .email, .subject, textarea{
-  width: 100%;
-  margin: 5px 0 5px 0;
-  padding: 5px;
-}
-
-.second_page button{
-  margin: 30px 0 0 0;
-  padding: 5px 20px; 
-  background-color:  #f9f9f9;
-  border: 1px solid black;
-}
-
-.second_page button:hover{
-  background-color: #ce3232;
-  color: #f9f9f9;
-  border: thin;
-}
-
-.second_page button:active{
-  transform: translateY(2px);
-}
 
 /*THIRD_PAGE*/
 
@@ -253,27 +215,44 @@ form button:focus{
   nav{
     float: right;
     width: 50%;
-    margin: 20px 0 0 50px;
+    margin: 10px 0 0 50px;
   }
 
+  nav ul li a{
+    font-size: 35px;
+  }
   /*section 2*/
-  .info{
-    /* position: absolute !important;
-    top: 5%;
-    width: 100%; */
-  }
-
   .img_slider img{
     width: 100%;
   }
 
-  .mylink{
-    padding: 0;
-    /* position: absolute;
-    top: 10px;
-    right: 150px; */
+  .section_1_page1{
+    height: 100px;
   }
-  
+
+  .section_1_page1 h5, .section_1_page1 p{
+    font-size: 30px;
+  }
+  .section_2_page1 .info h5 {
+    font-family:'Segoe UI';
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .section_2_page1 .info p{
+    font-family:'Segoe UI';
+    font-size: 28px;
+  }
+
+  .section_2_page1 .img_slider{
+    width: 100%;
+  }
+
+  .section_2_page1 .myLinks .facebook a, .section_2_page1 .myLinks .twitter a, .section_2_page1 .myLinks .instagram a {
+    font-size: 25px;
+    font-weight: normal;
+  }
+
   .myLinks .facebook a{
     transform: rotate(360deg);
     position: absolute;
@@ -284,7 +263,7 @@ form button:focus{
     text-decoration: none;
     color: #000;
   }
-  
+
   .myLinks .instagram a{
     transform: rotate(360deg);
     position: absolute;
@@ -294,7 +273,7 @@ form button:focus{
     text-decoration: none;
     color: #000;
   }
-  
+
   .myLinks .twitter a{
     transform: rotate(360deg);
     position: absolute;
@@ -304,9 +283,22 @@ form button:focus{
     text-decoration: none;
     color: #000;
   }
-  
+
   .facebook a:hover, .instagram a:hover, .twitter a:hover{
     color: #ce3232;
     text-decoration: none;
   }
+
+  .FAQ{
+    margin: 30px;
+  }
+  .FAQ .question_1 h5{
+    font-size: 30px;
+  }
+  .FAQ .question_1 p, .FAQ .question_2 p{
+    font-size: 23px;
+  }
+
+  /*SECOND PAGE*/
+
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recimania</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bootstrap/css/animate.min.css">
@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row">
                     <div class="logo">
-                        <h1><a href="/">reci<span>mania</span></a></h1>
+                        <h1><a href="/"><img src="/images/logo.png" width="80px">reci<span>mania</span></a></h1>
                     </div>
 
                     <nav>
@@ -37,12 +37,12 @@
                 <div class="col-lg-9 col-md-9">
                     <div><h3>Contact us</h3></div>
                     <form>
-                        <input class="name  wow fadeIn" type="text" placeholder="Fullname">
-                        <input class="email  wow fadeIn" type="email" placeholder="Email address">
-                        <input class="subject wow fadeIn" type="text" placeholder="Subject">
-                        <textarea class="wow fadeIn" cols="151" rows="5"></textarea>
+                        <input class="name  wow fadeIn" id="fullname" type="text" placeholder="Fullname">
+                        <input class="email  wow fadeIn" id="email" type="email" placeholder="Email address">
+                        <input class="subject wow fadeIn" id="subject" type="text" placeholder="Subject">
+                        <textarea class="wow fadeIn" id="text" placeholder="Write your message" cols="151" rows="5"></textarea>
+                        <button id="btn" class="wow fadeIn" >Send a message</button>
                     </form>
-                    <button class="wow fadeIn">Send a message</button>
                 </div>
 
                     <div class="col-lg-3 col-md-3 myLinks wow fadeIn">
@@ -54,7 +54,8 @@
             </div>
         </div>
     </div>
-    
+
+    <script src="/jquery/jquery-3.4.1.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/bootstrap/js/wow.min.js"></script>
         <script>

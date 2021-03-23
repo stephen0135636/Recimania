@@ -118,7 +118,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
   font-family: 'Segoe UI';
   font-size: 14px;
   text-decoration: none;
-  color: #000;
+  color: #bfbdbd;
   float: right;
 }
 
@@ -128,7 +128,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
   right: 0; 
   font-size: 14px;
   text-decoration: none;
-  color: #000;
+  color: #bfbdbd;
   display: inline;
   float: right;
 }
@@ -139,7 +139,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
   right: 10px;
   font-size: 14px;
   text-decoration: none;
-  color: #000;
+  color: #bfbdbd;
 }
 
 .facebook a:hover, .instagram a:hover, .twitter a:hover{
@@ -176,6 +176,10 @@ li a:hover { color: #ce3232;text-decoration: none;}
     font-size: 10px;
     width: 30%;
     margin:10px 0 0 10px ;
+  }
+
+  .logo h1{
+    font-size: 45px;
   }
 
   .logo img{
@@ -230,7 +234,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
     font-family: 'Segoe UI';
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
   }
 
   .myLinks .instagram a{
@@ -239,7 +243,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
     right: 80%;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
   }
 
   .myLinks .twitter a{
@@ -248,7 +252,7 @@ li a:hover { color: #ce3232;text-decoration: none;}
     right: 70%;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
   }
 
   .facebook a:hover, .instagram a:hover, .twitter a:hover{

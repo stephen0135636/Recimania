@@ -32,9 +32,5 @@ const sendMail = (fullname, email, subject, text,cb)=>{
 
 }
 
-sendMail('', '', '', function(err, data){
-
-})
-
 
 module.exports = sendMail

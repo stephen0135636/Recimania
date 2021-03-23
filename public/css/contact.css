@@ -10,7 +10,7 @@ body{
     font-size: 20px
 }
 
-.section_1_page1{
+.section_1{
     margin: 50px 0 50px 0;
 }
   
@@ -104,7 +104,7 @@ nav ul  li a{
     font-family: 'Segoe UI';
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
   }
   
   .instagram a{
@@ -113,7 +113,7 @@ nav ul  li a{
     right: 0;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
   }
   
 .twitter a{
@@ -122,7 +122,7 @@ nav ul  li a{
     right: 10px;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #bfbdbd;
 }
   
 .facebook a:hover, .instagram a:hover, .twitter a:hover{
@@ -138,6 +138,10 @@ nav ul  li a{
         margin:10px 0 0 10px ;
     }
 
+    .logo h1 a{
+        font-size: 25px;
+    }
+
     .logo img{
         display: none;
     }
@@ -145,11 +149,16 @@ nav ul  li a{
     nav{
         float: right;
         width: 50%;
-        margin: 20px 0 0 50px;
+        margin: 25px 0 0 50px;
     }
 
     nav ul li a{
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .second_page div h3{
+        margin: 10px 0 10px 0;
+        font-size: 25px;
     }
 
     .second_page form input,    .second_page form textarea{
@@ -167,7 +176,7 @@ nav ul  li a{
         font-family: 'Segoe UI';
         font-size: 14px;
         text-decoration: none;
-        color: #000;
+        color: #bfbdbd;
     }
 
     .myLinks .instagram a{
@@ -176,7 +185,7 @@ nav ul  li a{
         right: 80%;
         font-size: 14px;
         text-decoration: none;
-        color: #000;
+        color: #bfbdbd;
     }
 
     .myLinks .twitter a{
@@ -185,7 +194,7 @@ nav ul  li a{
         right: 70%;
         font-size: 14px;
         text-decoration: none;
-        color: #000;
+        color: #bfbdbd;
     }
 
     .facebook a:hover, .instagram a:hover, .twitter a:hover{

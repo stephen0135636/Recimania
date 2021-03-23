@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const publicDirectoryPath = path.join(__dirname, './public')
 const recipe = require('./utils/food')
+const sendMail = require('./mail')
 
 const port = process.env.PORT || 3000
 
@@ -18,8 +19,18 @@ app.set('view engine', 'hbs')
 
 
 app.post('/email', (req, res) =>{
+    
+    // send email here
+    const { fullname, email, subject, text} = req.body
     console.log('Data', req.body)
-    res.json({ message: 'Message recieved'})
+
+    sendMail(fullname, email, subject, text, function(err, data){
+        if(err){
+            res.status(500).json({ message: 'Internal Error'})
+        }else{
+            res.json({ message: 'Email Sent!!!'})
+        }
+    });
 })
 
 app.get('', (req, res) => {

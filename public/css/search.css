@@ -58,41 +58,36 @@ nav ul  li a{
   
   li a:hover { color: #ce3232;text-decoration: none;} 
   .logo h1 a:hover{ color: #ce3232;text-decoration: none;}
-  
 
-    /*CONTACT US SECTION*/
-    .second_page h3{
-    color: #bfbdbd;
-    margin: 30px 0 30px 0;
-  }
-  
-  .second_page .name, .email, .subject, textarea{
-    width: 100%;
-    margin: 5px 0 5px 0;
+  form input{
+    width: 70%;
+    margin: 5px 0 5px 100px;
     padding: 5px;
   }
   
-  .second_page button{
-    padding:15px 30px;
-    margin-top: 30px;
-    border: none; 
-    background-image: linear-gradient(to bottom right, #ec9f05af ,#ff4d00a9  );
-    align-items: center;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-size: 15px;
+  form button{
+    margin: 30px 0 0 0;
+    padding: 5px 20px; 
+    background-color:  #f9f9f9;
+    border: 1px solid black;
   }
-  .second_page button:hover{
+  
+  .text{
+    margin: 100px 0 0 100px;
+  
+  }
+  
+  form button:hover{
     background-color: #ce3232;
     color: #f9f9f9;
     border: thin;
   }
   
-  .second_page button:active{
-    transform: translateY(5px);
-}
-
-/*LINKS SECTION*/
+  form button:focus{
+    transform: translateY(2px);
+  }
+  
+  /*THIRD GRID*/
 .mylink{
     padding: 0;
   }
@@ -105,92 +100,112 @@ nav ul  li a{
     font-size: 14px;
     text-decoration: none;
     color: #000;
+    float: right;
   }
   
   .instagram a{
     position: absolute;
     top: 200px;
-    right: 0;
+    right: 0; 
     font-size: 14px;
     text-decoration: none;
     color: #000;
+    display: inline;
+    float: right;
   }
   
-.twitter a{
+  .twitter a{
     position: absolute;
     top: 300px;
     right: 10px;
     font-size: 14px;
     text-decoration: none;
     color: #000;
-}
+  }
   
-.facebook a:hover, .instagram a:hover, .twitter a:hover{
+  .facebook a:hover, .instagram a:hover, .twitter a:hover{
     color: #ce3232;
     text-decoration: none;
-}
+  }
+
+  
 
 @media screen and (max-width: 991px) {
     .logo{
-        float: left;
-        font-size: 10px;
-        width: 30%;
-        margin:10px 0 0 10px ;
+      float: left;
+      font-size: 10px;
+      width: 30%;
+      margin:10px 0 0 10px ;
     }
-
+  
     .logo img{
-        display: none;
+      display: none;
     }
-
+  
     nav{
-        float: right;
-        width: 50%;
-        margin: 20px 0 0 50px;
+      float: right;
+      width: 50%;
+      margin: 20px 0 0 40px;
     }
-
+  
     nav ul li a{
-        font-size: 20px;
+      font-size: 20px;
     }
-
-    .second_page form input,    .second_page form textarea{
-        margin: 10px 0 20px 0;
-        border: 1px solid black;
-    }
-
-    .myLinks{
-        margin: 10px;
-    }
-    .myLinks .facebook a{
-        position: absolute;
-        top: 0;
-        right: 90%;
-        font-family: 'Segoe UI';
-        font-size: 14px;
-        text-decoration: none;
-        color: #000;
-    }
-
-    .myLinks .instagram a{
-        position: absolute;
-        top: 0;
-        right: 80%;
-        font-size: 14px;
-        text-decoration: none;
-        color: #000;
-    }
-
-    .myLinks .twitter a{
-        position: absolute;
-        top: 0;
-        right: 70%;
-        font-size: 14px;
-        text-decoration: none;
-        color: #000;
-    }
-
-    .facebook a:hover, .instagram a:hover, .twitter a:hover{
-        color: #ce3232;
-        text-decoration: none;
+    /*section 2*/
+    .img_slider img{
+      width: 100%;
     }
     
+    form input{
+        width: 70%;
+        margin: 5px 0 5px 0;
+        padding: 5px;
+    }
+
+    .myLinks .facebook a{
+      position: absolute;
+      top: 0;
+      right: 90%;
+      font-family: 'Segoe UI';
+      font-size: 14px;
+      text-decoration: none;
+      color: #000;
+    }
+  
+    .myLinks .instagram a{
+      position: absolute;
+      top: 0;
+      right: 80%;
+      font-size: 14px;
+      text-decoration: none;
+      color: #000;
+    }
+    
+    .myLinks .twitter a{
+      position: absolute;
+      top: 0;
+      right: 70%;
+      font-size: 14px;
+      text-decoration: none;
+      color: #000;
+    }
+  
+    .facebook a:hover, .instagram a:hover, .twitter a:hover{
+      color: #ce3232;
+      text-decoration: none;
+    }
+  
+    .FAQ{
+      margin: 30px;
+    }
+    .FAQ .question_1 h5{
+      font-size: 30px;
+    }
+    .FAQ .question_1 p, .FAQ .question_2 p{
+      font-size: 23px;
+    }
+  
+    /*SECOND PAGE*/
+  
 }
+  

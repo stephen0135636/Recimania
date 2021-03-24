@@ -141,6 +141,10 @@ nav ul  li a{
     .logo img{
       display: none;
     }
+
+    .logo h1 a{
+      font-size: 25px;
+    }
   
     nav{
       float: right;

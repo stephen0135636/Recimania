@@ -60,14 +60,13 @@ app.get('/result', (req, res) => {
         res.send({
             body:  response,
             search: req.query.search,
-            text: "i am a developer"
         })
 
     })
 })
 
 app.get('*', (req, res) => {
-    res.send("<h1>Page not found</h1>")
+    res.render('404')
 })
 
 app.listen(port, () => {

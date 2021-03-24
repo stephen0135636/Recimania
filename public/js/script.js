@@ -1,91 +1,70 @@
-//HTTP BROWSER FETCH METHOD
+const recipeForm = document.querySelector("form")
+const search = document.querySelector("input")
+const buttton = document.querySelector("#btn")
+const messageOne = document.querySelector("#message_1")
+//SEARCH
+const messageTwo = document.querySelector("#message_2")
 
+//LOCATION
+const location = document.querySelector("#location")
+const location_result = document.querySelector("#location_result")
 
+//SUMMARY
+const summary = document.querySelector("#summary")
+const summary_result = document.querySelector("#summary_result")
 
+//INGREDIENTS
+const ingredients = document.querySelector("#ingredients")
+const ingredients_result = document.querySelector("#ingredients_result")
 
-// /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
-// var acc = document.getElementsByClassName("accordion");
-// var i;
+//PROCEDURE
+const procedure = document.querySelector("#procedure")
+const procedure_result = document.querySelector("#procedure_result")
 
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].onclick = function(){
-//       this.classList.toggle("active");
-//       this.nextElementSibling.classList.toggle("show");
-//     }
-// }
+//IMAGE
+const image = document.querySelector("#image")
 
-// //SLIDESHOW
-// var myIndex = 0;
-// carousel();
+recipeForm.addEventListener('submit', (e) =>{
+  e.preventDefault()
 
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}    
-//   x[myIndex-1].style.display = "block";  
-//   setTimeout(carousel, 3000);    
-// }
+  const myrecipe = search.value
 
+  messageOne.textContent = 'loading...'
+  messageTwo.textContent = ' '
 
+  fetch('http://localhost:3000/result?search=' + myrecipe).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        messageOne.textContent = data.error
+      } else {
+        messageOne.textContent = "Search results for "+data.search
+        messageTwo.textContent = data.body.search
 
-// const recipeForm = document.querySelector("#search_form")
-// const search = document.querySelector("#search_bar")
-// const buttton = document.querySelector("#btn")
-// const messageOne = document.querySelector("#message_1")
-// const messageTwo = document.querySelector("#message_2")
-// // const search_result = document.querySelector("#search_result")
+        location.textContent = "Location"
+        location_result.textContent = data.body.location
 
-// recipeForm.addEventListener('submit', (e) =>{
-//   e.preventDefault()
+        summary.textContent = "Summary"
+        summary_result.textContent = data.body.summary
 
-//   const recipe = search.value
+        ingredients.textContent = "ingredients"
+        ingredients_result.textContent = data.body.ingredient
 
-//   messageOne.textContent = "Loading..."
-//   messageTwo.textContent = ''
+        procedure.textContent = "procedure"
+        procedure_result.textContent = data.body.procedure
 
-//   fetch('/result?search=' + recipe).then((response) => {
-//     response.json().then((data) => {
-//       if (data.error) {
-//         messageOne.textContent = data.error
-//         messageOne.style.margin = "10px"
-//       } else {
-//         messageOne.textContent = data.search
-//         messageOne.style.margin = "10px 10px 0 10px"
-//         messageTwo.style.margin = "10px 10px 0 10px"
-//         messageTwo.style.textAlign = "justify"
-//         messageTwo.textContent = data.body.foodrecipe00
-//       }
-//     })
-//   })
-
-// })
-
-/*SUBMIT FORM*/
-
-$('form').on('submit', (e)=>{
-  e.preventDefault();
-
-  const fullname = document.querySelector('#fullname').value.trim();
-  const email = document.querySelector('#email').value.trim();
-  const subject = document.querySelector('#subject').value.trim();
-  const text = document.querySelector('#text').value.trim();
-
-  const data = {
-    fullname,
-    email,
-    subject,
-    text
-  }
-
-  $.post('/email', data, function(){
-    console.log('server recieved our data')
+        image.textContent = data.body.img
+      }
+    })
   })
-  
+
 })
+
+
+
+
+
+
+
 
 
 

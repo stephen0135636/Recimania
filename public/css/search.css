@@ -139,9 +139,9 @@ nav ul  li a{
   animation: spin 2s linear infinite;
 }
 
-#message_1, #message_2, #location, #summary, #ingredients, #procedure{
+/* #message_1, #message_2, #location, #summary, #ingredients, #procedure{
   color: #bfbdbd;
-}
+} */
 
 #summary_result{
   text-align: justify;

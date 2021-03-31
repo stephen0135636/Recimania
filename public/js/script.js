@@ -63,7 +63,7 @@ recipeForm.addEventListener('submit', (e) =>{
   loader.classList.add('loader')
   messageTwo.textContent = ' '
 
-  fetch('http://localhost:3000/result?search=' + myrecipe).then((response) => {
+  fetch('/result?search=' + myrecipe).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         loader.classList.remove('loader')

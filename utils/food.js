@@ -14,9 +14,10 @@ const food = (item, callback)=>{
             search:  response.body.search,
             location:  response.body.location,
             summary:  response.body.summary,
-            ingredient:  response.body.lngredients,
+            ingredient:  response.body.ingredients,
             procedure: response.body.procedure,
-            img: response.body.image
+            img: response.body.image,
+            video: response.body.video
             })
         }
     })

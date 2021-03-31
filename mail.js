@@ -4,8 +4,8 @@ const mailGun = require('nodemailer-mailgun-transport')
 
 const auth = {
     auth: {
-        api_key: '2791adac17e9e74c1233beb4808e3ca3-ea44b6dc-9b3357c4',
-        domain: 'sandbox34a396936b184b0c8afdaba6a10b0112.mailgun.org'
+        api_key: '09aa65406f84fe245531701bfc0c82da-1553bd45-8f67c3b5',
+        domain: 'sandbox30d65a75ba504f7fb393297f6d413b80.mailgun.org'
     }
 };
 
@@ -16,7 +16,7 @@ const sendMail = (fullname, email, subject, text,cb)=>{
     
     const mailOption = {
         from: email,
-        to: 'nwabuezesc@gmail.com',
+        to: 'stephennonso4@gmail.com',
         fullname,
         subject,
         text,
@@ -34,3 +34,5 @@ const sendMail = (fullname, email, subject, text,cb)=>{
 
 
 module.exports = sendMail
+
+//$TphEnN@n894@M@ilguN

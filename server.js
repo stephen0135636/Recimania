@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const publicDirectoryPath = path.join(__dirname, './public')
 const recipe = require('./utils/food')
-const sendMail = require('./mail')
+// const sendMail = require('./mail')
 
 const port = process.env.PORT || 3000
 
